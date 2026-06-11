@@ -1,0 +1,41 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Full name of the lead"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "student",
+        "working_professional",
+        "freelancer",
+        "other"
+      ],
+      "description": "Current role"
+    },
+    "wants_to_build": {
+      "type": "boolean",
+      "default": false,
+      "description": "Checked I want to build real AI systems"
+    },
+    "source": {
+      "type": "string",
+      "description": "Where the lead came from"
+    }
+  },
+  "required": [
+    "full_name",
+    "email"
+  ]
+}
